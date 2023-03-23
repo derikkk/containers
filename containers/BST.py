@@ -1,6 +1,7 @@
 '''
 This file implements the Binary Search Tree data structure.
-The functions in this file are considerably harder than the functions in the BinaryTree file.
+The functions in this file are considerabl
+y harder than the functions in the BinaryTree file.
 '''
 
 from containers.BinaryTree import BinaryTree, Node
@@ -9,7 +10,8 @@ from containers.BinaryTree import BinaryTree, Node
 class BST(BinaryTree):
     '''
     The BST is a superclass of BinaryTree.
-    That means that the BST class "inherits" all of the methods from BinaryTree,
+    That means that the BST clas
+    s "inherits" all of the methods from BinaryTree,
     and we don't have to reimplement them.
     '''
 
@@ -40,7 +42,8 @@ class BST(BinaryTree):
         we defined a __str__ function,
         but not a __repr__ function.
         Recall that the __repr__ function should
-        return a string that can be used to recreate a valid instance of the class.
+        return a string that
+        can be used to recreate a valid instance of the class.
         Thus, if you create a variable using the command BST([1,2,3])
         it's __repr__ will return "BST([1,2,3])"
 
@@ -73,7 +76,8 @@ class BST(BinaryTree):
         Whenever you implement a data structure,
         the first thing to do is to implement a function that checks whether
         the structure obeys all of its laws.
-        This makes it possible to automatically test whether insert/delete functions
+        This makes it possible to a
+        utomatically test whether insert/delete functions
         are actually working.
         '''
         if self.root:
@@ -85,12 +89,15 @@ class BST(BinaryTree):
         '''
         FIXME:
         The current implementation has a bug:
-        it only checks if the children of the current node are less than/greater than,
-        rather than ensuring that all nodes to the left/right are less than/greater than.
+        it only checks if the chil
+        dren of the current node are less than/greater than,
+        rather than ensuri
+        ng that all nodes to the left/right are less than/greater than.
 
         HINT:
         Use the _find_smallest and _find_largest functions to fix the bug.
-        You should use the _ prefixed methods because those are static methods just like this one.
+        You should use the _ prefix
+        ed methods because those are static methods just like this one.
         '''
         ret = True
         if node.left:
@@ -114,7 +121,8 @@ class BST(BinaryTree):
         Implement this function.
 
         HINT:
-        Create a staticmethod helper function following the pattern of _is_bst_satisfied.
+        Create a staticmethod helper
+        function following the pattern of _is_bst_satisfied.
         '''
         if self.root:
             self._insert(self.root, value)
@@ -146,11 +154,12 @@ class BST(BinaryTree):
 
         HINT:
         Repeatedly call the insert method.
-        You cannot get this method to work correctly until you have gotten insert to work correctly.
+        You cannot get this method to work
+        correctly until you have gotten insert to work correctly.
         '''
         for x in xs:
             self.insert(x)
-            
+ 
     def __contains__(self, value):
         '''
         Recall that `x in tree` desugars to `tree.__contains__(x)`.
@@ -240,7 +249,8 @@ class BST(BinaryTree):
         Implement this function.
 
         HINT:
-        You should have everything else working before you implement this function.
+        You should have everythin
+        g else working before you implement this function.
 
         HINT:
         Use a recursive helper function.
