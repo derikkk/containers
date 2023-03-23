@@ -143,7 +143,7 @@ class BST(BinaryTree):
         '''
         for x in xs:
             self.insert(x)
- 
+
     def __contains__(self, value):
         '''
         Recall that `x in tree` desugars to `tree.__contains__(x)`.
