@@ -1,10 +1,4 @@
 
-##################
-##############################################################
-# example fibonacci number code;
-# you do not have to modify this code in any way
-#########################
-#######################################################
 
 
 def fibs(n):
@@ -48,13 +42,10 @@ def fib(n):
     return f2
 
 
-###############
 #################################################################
 # fibonacci number code using generators;
 # you will need to implement the functions below
 ############
-####################################################################
-
 
 class Fib:
     '''
