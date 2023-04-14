@@ -1,6 +1,3 @@
-
-
-
 def fibs(n):
     '''
     This function computes the first n fibonacci numbers.
