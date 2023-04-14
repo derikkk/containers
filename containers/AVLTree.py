@@ -115,17 +115,8 @@ class AVLTree(BST):
         FIXME:
         Implement this function.
 
-        The lecture videos provide a high-leve
-        l overview of how to insert into an AVL tree,
-        and the textbook provides full python code.
-        The textbook's class hierarchy for their AV
-        L tree code is fairly different from our class hierarchy,
-        however, so you will have to adapt their code.
-
-        HINT:
-        It is okay to add @staticmethod helper functions for this code.
-        The code should look very similar to th
-        e code for your insert function for the BST,
+        The lecture videos provide a high-lev
+        el overview of how to insert into an AVL tree,
         but it will also call the left and right rebalancing functions.
         '''
         if self.root:
